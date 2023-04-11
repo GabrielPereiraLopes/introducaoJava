@@ -1,0 +1,93 @@
+
+
+package exercicio2;
+
+import javax.swing.JOptionPane;
+
+
+public class Exercicio2 {
+
+    public static void main(String[] args) {
+        int total  = 0 ;
+        
+        
+        JOptionPane.showMessageDialog(null, "Bem vindo ao sistema de contagem de calorias!");
+        JOptionPane.showMessageDialog(null, """
+                                            Pratos: 
+                                            1-Vegetariano
+                                            2-Peixe
+                                            4-Carne """);
+        
+        int escolha1= Integer.parseInt(JOptionPane.showInputDialog("Digite o prato escolhido : "));
+        
+        if (escolha1 == 1){                  
+            total+= 180;  
+        }else{
+        }if (escolha1 == 2){                  
+            total+= 230;  
+        }else{
+        } if (escolha1 == 3){                  
+            total+= 250;  
+        }else{
+        } if (escolha1 == 4){                  
+            total+= 350;  
+        }else{
+        }
+        
+        
+        JOptionPane.showMessageDialog(null, """
+                                            Sobremesas: 
+                                            1-Abacaxi
+                                            2-Sorvete diet
+                                            3-Mouse diet
+                                            4-Mouse de chocolate""");
+        
+        int escolha2= Integer.parseInt(JOptionPane.showInputDialog("Digite a sobremesa escolhida: "));
+        
+        if (escolha2 == 1){                  
+            total+= 75;  
+        }else{
+        }if (escolha2 == 2){                  
+            total+= 110;  
+        }else{
+        } if (escolha2 == 3){                  
+            total+= 170;  
+        }else{
+        } if (escolha2 == 4){                  
+            total+= 200 ;  
+        }else{
+        }
+        
+        JOptionPane.showMessageDialog(null, """
+                                            Bebidas: 
+                                            1-cha
+                                            2-Suco de laranja
+                                            3-Suco de limao
+                                            4-Refrigerante diet""");
+        
+        
+        int escolha3= Integer.parseInt(JOptionPane.showInputDialog("Digite a bebida escolhida: "));
+        
+        if (escolha3 == 1){                  
+            total+= 20;  
+        }else{
+        }if (escolha3 == 2){                  
+            total+= 70;  
+        }else{
+        } if (escolha3 == 3){                  
+            total+= 100;  
+        }else{
+        } if (escolha3 == 4){                  
+            total+= 65;  
+        }else{
+        }
+        
+        
+         JOptionPane.showMessageDialog(null, "Total de calorias: " +total);
+
+        
+        
+        
+    }
+    
+}
