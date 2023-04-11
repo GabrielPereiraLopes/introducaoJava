@@ -1,0 +1,85 @@
+
+
+package exercicio3;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Exercicio3 {
+
+    public static void main(String[] args) {
+        
+        
+            
+        Scanner sc = new Scanner(System.in);
+     
+        JOptionPane.showMessageDialog(null, "Bem vindo ao sistema de contagem de populacao!");
+        JOptionPane.showMessageDialog(null, """
+                                            Sexo: 
+                                            m-Masculino
+                                            f-Feminino """);
+        
+        System.out.println("Digite o sexo desejado: ");
+       
+        char sexo = sc.next().charAt(0);
+       
+        if(sexo == 'm' || sexo == 'f'){
+            System.out.println("sexo aceito.");
+        }else{
+           JOptionPane.showMessageDialog(null, "Sexo incorreto!");
+        }
+        
+        
+                JOptionPane.showMessageDialog(null, """
+                                            Cor dos olhos: 
+                                            a-Azul
+                                            v-Verde
+                                            c- Castanho
+                                            p- Preto """);
+         System.out.println("Digite a cor de olho desejado: ");
+         char cor = sc.next().charAt(0);
+       
+        if(cor == 'a' || cor == 'v'||cor == 'c' || cor == 'p'){
+            System.out.println("cor aceita.");
+        }else{
+           JOptionPane.showMessageDialog(null, "cor incorreta!");
+        }
+        
+           
+                JOptionPane.showMessageDialog(null, """
+                                            Cor do cabelo: 
+                                            l-Loiro
+                                            c- Castanho
+                                            p- Preto
+                                            r- Ruivo """);
+         System.out.println("Digite a cor de olho desejado: ");
+         char cabelo = sc.next().charAt(0);
+       
+        if(cabelo == 'l' || cabelo == 'c'||cabelo == 'p' || cabelo == 'r'){
+            System.out.println("cor aceita.");
+        }else{
+           JOptionPane.showMessageDialog(null, "cor incorreta!");
+        }
+        
+        System.out.println("Digite a sua idade: ");
+        int idade = sc.nextInt();
+        
+        if(idade >10 && idade<100){
+            System.out.println("Idade aceita.");
+        }else{
+            JOptionPane.showMessageDialog(null, "idade incorreta!");
+        }
+        
+         System.out.println("Digite o seu salario: ");
+        float salario = sc.nextFloat();
+        
+        if(salario >= 0){
+            System.out.println("salario aceito.");
+        }else{
+            JOptionPane.showMessageDialog(null, "salario incorreto!");
+        }
+        
+       
+    }
+    
+}
